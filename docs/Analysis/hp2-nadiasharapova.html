@@ -58,25 +58,105 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="hp2-nadiasharapova_files/libs/clipboard/clipboard.min.js"></script>
-<script src="hp2-nadiasharapova_files/libs/quarto-html/quarto.js"></script>
-<script src="hp2-nadiasharapova_files/libs/quarto-html/popper.min.js"></script>
-<script src="hp2-nadiasharapova_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="hp2-nadiasharapova_files/libs/quarto-html/anchor.min.js"></script>
-<link href="hp2-nadiasharapova_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="hp2-nadiasharapova_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="hp2-nadiasharapova_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="hp2-nadiasharapova_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="hp2-nadiasharapova_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 
 
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="fullcontent">
+<body class="nav-fixed">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
-<main class="content" id="quarto-document-content">
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">HP2</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="dropdown-header">
+ <span class="menu-text">hp2-nadiasharapova.qmd</span></li>
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#import-data-and-change-directory" id="toc-import-data-and-change-directory" class="nav-link" data-scroll-target="#import-data-and-change-directory">Import Data and Change Directory</a></li>
+  <li><a href="#data-dictionary" id="toc-data-dictionary" class="nav-link" data-scroll-target="#data-dictionary">Data Dictionary</a></li>
+  <li><a href="#setting-variable-types" id="toc-setting-variable-types" class="nav-link" data-scroll-target="#setting-variable-types">Setting Variable Types</a></li>
+  <li><a href="#how-do-men-and-women-perceive-their-academic-performance-in-computer-science" id="toc-how-do-men-and-women-perceive-their-academic-performance-in-computer-science" class="nav-link" data-scroll-target="#how-do-men-and-women-perceive-their-academic-performance-in-computer-science">How do men and women perceive their academic performance in computer science?</a></li>
+  <li><a href="#age-and-performance" id="toc-age-and-performance" class="nav-link" data-scroll-target="#age-and-performance">Age and Performance</a></li>
+  <li><a href="#how-did-students-above-and-below-the-median-number-of-friends-compare-in-terms-of-depression-levels" id="toc-how-did-students-above-and-below-the-median-number-of-friends-compare-in-terms-of-depression-levels" class="nav-link" data-scroll-target="#how-did-students-above-and-below-the-median-number-of-friends-compare-in-terms-of-depression-levels">How did students above and below the median number of friends compare in terms of depression levels?</a></li>
+  <li><a href="#sleep-and-depression" id="toc-sleep-and-depression" class="nav-link" data-scroll-target="#sleep-and-depression">Sleep and Depression</a></li>
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions">Conclusions</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -139,7 +219,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>here <span class="sc">::</span> <span class="fu">i_am</span> (<span class="st">"analysis/hp2-nadiasharapova.qmd"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stderr">
-<pre><code>here() starts at /Users/nadiasharapova/Ling 343/HW FR/hp2-nadiasharapova</code></pre>
+<pre><code>here() starts at /Users/nadiasharapova/Ling 343/Git/mysite</code></pre>
 </div>
 <details>
 <summary>Code</summary>
@@ -487,12 +567,13 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <section id="conclusions" class="level2">
 <h2 class="anchored" data-anchor-id="conclusions">Conclusions</h2>
 <p>My analysis of the dataset “Psychosocial Dimensions of Student Life,” reveals several key insights into how students are impacted by social barriers and mental health. In Computer Science, a STEM heavy field, we can see that students who face mental health struggles, older students, and women struggle with their perceptions of their performance. My data also shows that sleep and friendships have a significant impact on depression levels. This data implies that investing into services that include gender-based disparities and work to include older students is necessary. My data also supports the idea of investing further into helping students with mental struggles create healthier habits like sleep and friendships to address mental health struggles.</p>
+
+
 <!-- -->
 
 </section>
 
-</main>
-<!-- /main column -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
