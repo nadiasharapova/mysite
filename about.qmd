@@ -1,9 +1,16 @@
 ---
-title: "About"
+title: "Introduction"
 ---
 
-About this site
+## Introduction
 
-```{r}
-1 + 1
-```
+This data, titled "Psychosocial Dimensions of Student Life," includes the survey resutls from 100 computer science students surrounding their lifestyles and mental health. This analysis uses data surrounding their lifestyle and social life to determine any correlations between mental health and self-care behaviors through data analysis. I was specifically interested in understanding how different elements of student life impacted perceived performance and depression levels. This analysis can be used to explore how to improve student health in STEM heavy fields and recognize the barriers to performance introduced by gender, depression, stress/sleep, and age.
+
+Core Questions
+
+1.  How do men and women perceive their academic performance?
+2.  Does depression decrease in those with more friends?
+3.  What is the impact of sleep on depression?
+4.  How does age impact student behavior and perceived performance?
+
+## 

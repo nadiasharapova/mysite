@@ -5,15 +5,16 @@ project:
 website:
   title: "HP2"
   navbar:
+    background:  primary
+    search: true
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
       - hp2-nadiasharapova.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: pulse
     css: styles.css
     toc: true
     page-layout: full
